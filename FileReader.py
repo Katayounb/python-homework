@@ -7,7 +7,7 @@ if isfile(file_path):
     # To read a file using python we'll use the method `open`
     my_file = open(file_path)
 
-    for line in my_file.readline():
+    for line in my_file.readlines():
         # want to remove any extra chars before reading
         cleaned_line = line.split()
         print(cleaned_line)
